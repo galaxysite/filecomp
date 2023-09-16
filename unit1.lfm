@@ -1,0 +1,84 @@
+object Form1: TForm1
+  Left = 135
+  Height = 477
+  Top = 438
+  Width = 965
+  Align = alClient
+  Caption = 'Graphical Compare'
+  ClientHeight = 477
+  ClientWidth = 965
+  OnCreate = oncr
+  LCLVersion = '2.2.6.0'
+  object StringGrid1: TStringGrid
+    Left = 0
+    Height = 477
+    Top = 0
+    Width = 965
+    Align = alClient
+    ColCount = 3
+    DefaultColWidth = 300
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goColSizing, goRowSelect, goSmoothScroll]
+    RowCount = 2
+    TabOrder = 0
+    OnDblClick = dbl
+    OnDrawCell = odc
+    OnEditButtonClick = oebc
+    OnHeaderClick = hc
+  end
+  object PopupMenu1: TPopupMenu
+    Left = 440
+    Top = 64
+    object MenuItem1: TMenuItem
+      Caption = 'Open File 1 / Открыть файл 1'
+      OnClick = MenuItem1Click
+    end
+    object MenuItem3: TMenuItem
+      Caption = 'Find (in HEX) | Шестнадцатеричный поиск'
+      OnClick = OpenFind
+    end
+    object MenuItem6: TMenuItem
+      Caption = 'ReSize | Изменить размер'
+      OnClick = ReSize1
+    end
+  end
+  object PopupMenu2: TPopupMenu
+    Left = 536
+    Top = 64
+    object MenuItem4: TMenuItem
+      Caption = 'Open File 2 / Открыть файл 2'
+      OnClick = MenuItem4Click
+    end
+    object MenuItem5: TMenuItem
+      Caption = 'Find (in HEX) | Шестнадцатеричный поиск'
+      OnClick = OpenFind
+    end
+    object MenuItem7: TMenuItem
+      Caption = 'ReSize | Изменить размер'
+      OnClick = ReSize2
+    end
+  end
+  object OpenDialog1: TOpenDialog
+    Left = 440
+    Top = 136
+  end
+  object OpenDialog2: TOpenDialog
+    Left = 536
+    Top = 136
+  end
+  object SaveDialog1: TSaveDialog
+    Left = 440
+    Top = 216
+  end
+  object SaveDialog2: TSaveDialog
+    Left = 536
+    Top = 216
+  end
+  object PopupMenu3: TPopupMenu
+    Left = 334
+    Top = 177
+    object MenuItem2: TMenuItem
+      Caption = 'Exit / Выход'
+      OnClick = MenuItem2Click
+    end
+  end
+end

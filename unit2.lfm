@@ -1,0 +1,52 @@
+object Form2: TForm2
+  Left = 405
+  Height = 533
+  Top = 420
+  Width = 551
+  Caption = 'Byte / Байт'
+  ClientHeight = 533
+  ClientWidth = 551
+  OnCreate = oc
+  Position = poScreenCenter
+  LCLVersion = '2.0.12.0'
+  object BitBtn1: TBitBtn
+    Left = 8
+    Height = 32
+    Top = 500
+    Width = 136
+    Anchors = [akLeft, akBottom]
+    AutoSize = True
+    Cancel = True
+    Caption = 'Cancel | &Отмена'
+    Kind = bkCancel
+    ModalResult = 2
+    OnClick = Cancel
+    TabOrder = 0
+  end
+  object BitBtn2: TBitBtn
+    Left = 400
+    Height = 32
+    Top = 500
+    Width = 145
+    Anchors = [akRight, akBottom]
+    AutoSize = True
+    Caption = 'Save | &Сохранить'
+    Default = True
+    Kind = bkOK
+    ModalResult = 1
+    OnClick = oncl
+    TabOrder = 1
+  end
+  object ListBox1: TListBox
+    Left = 8
+    Height = 488
+    Top = 8
+    Width = 536
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    ExtendedSelect = False
+    ItemHeight = 0
+    ScrollWidth = 534
+    TabOrder = 2
+    TopIndex = -1
+  end
+end

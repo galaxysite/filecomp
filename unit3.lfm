@@ -1,0 +1,97 @@
+object Form3: TForm3
+  Left = 312
+  Height = 242
+  Top = 467
+  Width = 633
+  Caption = 'Шестнадцатеричный поиск | Find (HEX)'
+  ClientHeight = 242
+  ClientWidth = 633
+  Position = poScreenCenter
+  LCLVersion = '2.0.12.0'
+  object Edit1: TEdit
+    Left = 8
+    Height = 28
+    Top = 8
+    Width = 616
+    Anchors = [akTop, akLeft, akRight]
+    OnChange = Change1
+    TabOrder = 0
+  end
+  object Edit2: TEdit
+    Left = 8
+    Height = 28
+    Top = 104
+    Width = 616
+    Anchors = [akTop, akLeft, akRight]
+    OnChange = Change2
+    TabOrder = 1
+  end
+  object Button1: TButton
+    Left = 8
+    Height = 25
+    Top = 56
+    Width = 75
+    Caption = '<'
+    OnClick = Button1Click
+    TabOrder = 2
+  end
+  object Button2: TButton
+    Left = 549
+    Height = 25
+    Top = 56
+    Width = 75
+    Anchors = [akTop, akRight]
+    Caption = '>'
+    OnClick = Button2Click
+    TabOrder = 3
+  end
+  object Button3: TButton
+    Left = 8
+    Height = 25
+    Top = 152
+    Width = 75
+    Caption = '<'
+    OnClick = Button3Click
+    TabOrder = 4
+  end
+  object Button4: TButton
+    Left = 549
+    Height = 25
+    Top = 152
+    Width = 75
+    Anchors = [akTop, akRight]
+    Caption = '>'
+    OnClick = Button4Click
+    TabOrder = 5
+  end
+  object BitBtn1: TBitBtn
+    Left = 249
+    Height = 32
+    Top = 196
+    Width = 135
+    Anchors = [akBottom]
+    AutoSize = True
+    Cancel = True
+    Caption = 'Close | &Закрыть'
+    Kind = bkClose
+    ModalResult = 11
+    OnClick = CloseButton
+    TabOrder = 6
+  end
+  object Label1: TLabel
+    Left = 96
+    Height = 18
+    Top = 63
+    Width = 201
+    Caption = 'Поиск в файле 1 | Search in File 1'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 96
+    Height = 18
+    Top = 159
+    Width = 201
+    Caption = 'Поиск в файле 2 | Search in File 2'
+    ParentColor = False
+  end
+end
